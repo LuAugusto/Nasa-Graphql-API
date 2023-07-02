@@ -1,0 +1,9 @@
+.Fonte de dados: NASA API
+
+Pontos:
+1 -> Descobrir quais planetas a Voltbras pode instalar seus novos postos de carregamento e otimizar a xp de recarga para
+os viajantes
+    - . Planetas com alta gravidade, 100x mais eficiente o abastecimento.
+        - .  gravidade alta =  exoplanet.pl_bmassj > 10 Massas de Jupiter 
+
+2 ->

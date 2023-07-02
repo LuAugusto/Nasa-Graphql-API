@@ -6,9 +6,6 @@ services:
     container_name: nasa_graphql_api
     networks:
       - graphql-network
-    volumes:
-      - .:/usr/app
-      - /node_modules
     ports:
       - "4000:4000"
     depends_on:

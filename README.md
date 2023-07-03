@@ -65,7 +65,9 @@ Data example:
 ```
 
 # Login de um User
-
+```
+(Você deve utilizar os dados criados no registro)
+```
 ```
 mutation Login($data: UserLoginInputData!) {
   login(data: $data) {
@@ -106,7 +108,9 @@ Data example:
 ```
 
 # Instalar uma estação
-
+```
+(Token gerado no login e ID de algum item listado na query GetSuitableStations)
+```
 ```
 mutation InstallStation($data: StationInput!, $token: String!) {
   installStation(data: $data, token: $token) {
@@ -128,7 +132,10 @@ Data example:
 ```
 
 # Listar estações
+```
+Token gerado no login
 
+```
 ```
 query ListStations($token: String!) {
   listStations(token: $token) {
@@ -149,6 +156,9 @@ Data example:
 ```
 
 # Listar o histórico de alguma estação
+```
+(Token gerado no login e ID de algum item listado na query GetSuitableStations que possui instalações ou será retornado [] )
+```
 
 ```
 query ListStationHistory($data: RechargelistByStationInput!, $token: String!) {
@@ -174,6 +184,9 @@ Data example:
 ```
 
 # Recarregar em uma estação:
+```
+(Token gerado no login e ID de algum item listado na query GetSuitableStations, data de fim para a recarga e UserId gerado no registro/login )
+```
 
 ```
 mutation CreateRecharge($token: String!, $data: RechargeInput!) {
@@ -202,6 +215,9 @@ Data example:
 ```
 
 # Criar uma reserva em uma estação:
+```
+(Token gerado no login e ID de algum item listado na query GetSuitableStations, data de inicio e fim para a recarga e UserId gerado no registro/login )
+```
 
 ```
 mutation CreateRecharge($token: String!, $data: RechargeInput!) {
@@ -231,6 +247,9 @@ Data example:
 ```
 
 # Criar uma reserva em uma estação a partir de um reservationId:
+```
+(Token gerado no login e ID Gerado na Mutation createRechargeReservation)
+```
 
 ```
 mutation CreateRechargeByReservationId($token: String!, $data: RechargeByReservationIdInput!) {
@@ -255,6 +274,10 @@ Data example:
 ```
 
 # Atualizar o status de alguma recharge
+
+```
+(Token gerado no login e ID Gerado na Mutation createRecharge e status desejado )
+```
 
 ```
 mutation UpdateRechargeStatus($data: RechargeByIdInput!, $token: String!) {

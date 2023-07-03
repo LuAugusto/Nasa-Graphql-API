@@ -41,7 +41,7 @@ e desafio.
 
 ## Queries e Mutations disponiveis com exemplo de estrutura de dados:
 
-A API utiliza o GraphQL com o Apollo server para fornecedor o gerenciamento de carregamento.
+A API utiliza o GraphQL com o Apollo server para fornecer o gerenciamento de carregamento.
 
 # Registrar um User
 

@@ -220,9 +220,9 @@ Data example:
 ```
 
 ```
-mutation CreateRecharge($token: String!, $data: RechargeInput!) {
-  createRecharge(token: $token, data: $data) {
-    id,
+mutation CreateRechargeReservation($token: String!, $data: RechargeReservationInput!) {
+  createRechargeReservation(token: $token, data: $data) {
+     id,
     userId,
     start,
     end,

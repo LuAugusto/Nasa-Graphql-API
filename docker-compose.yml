@@ -13,6 +13,7 @@ services:
 
   db:
     image: postgres
+    container_name: db
     restart: always
     env_file:
       - .env
@@ -26,6 +27,17 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
     volumes:
       - postgres_data:/var/lib/postgresql/data
+
+  prisma-postgres-api:
+    build:
+      context: .
+    container_name: prisma-postgres-api
+    networks:
+      - graphql-network
+    command: npx prisma migrate deploy
+    depends_on:
+      - db
+      - nasa_graphql_api
 volumes:
   postgres_data:
 

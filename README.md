@@ -1,13 +1,3 @@
-# Projeto
-
-STATIONS API - BACKEND CHALLENGE
-
-# Apresentação: 
-
-### Sobre a API
-
-Foi desenvolvido uma API para resolução do desafio proposto pela empresa Voltbras.
-
 ## Pré-requisitos e utilização da API
 
 . Para baixar a API:
